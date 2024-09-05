@@ -1,5 +1,9 @@
-def from_json_to_graph(json_string):
-  pass
+import json
+
+def json_to_tree(json_string):
+    data = json.loads(json_string)
 
 
-print("test")
+test_string = "{ a: {}}"
+
+json_to_tree(test_string)
