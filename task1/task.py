@@ -26,7 +26,22 @@ def json_to_tree(json_string):
 
 
 #test code
-test_string = '''{ "a": {"b": {"c": {}}}}'''
+test_string = '''{
+    "1": {
+        "2": {
+            "3": {
+                "5": {},
+                "6": {}
+            },
+            "4": {
+                "7": {},
+                "8": {}
+
+            }
+        }
+    }
+}
+'''
 
 graph_structure = json_to_tree(test_string)
 
