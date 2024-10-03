@@ -30,6 +30,12 @@ def output_siblings_and_children(graph):
         print(f"\tДети: {value["children"]}")
 
 
+def main(test_string):
+    graph_structure = json_to_tree(test_string)
+    output_siblings_and_children(graph_structure)
+
+
+
 #test code
 test_string = '''{
     "1": {
@@ -47,7 +53,6 @@ test_string = '''{
     }
 }
 '''
+main(test_string)
 
 
-graph_structure = json_to_tree(test_string)
-output_siblings_and_children(graph_structure)
